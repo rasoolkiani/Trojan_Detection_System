@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="581.0" prefWidth="699.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="29.0" layoutY="14.0" text="Hostname" />
+      <Label layoutX="29.0" layoutY="50.0" text="Username" />
+      <Label layoutX="29.0" layoutY="87.0" text="Password" />
+      <Label layoutX="27.0" layoutY="121.0" text="Enable Secret" />
+      <Label layoutX="27.0" layoutY="157.0" text="Privilege" />
+      <Label layoutX="29.0" layoutY="192.0" text="Vty                                    From" />
+      <Label layoutX="263.0" layoutY="192.0" text="To" />
+      <CheckBox id="tftp" layoutX="25.0" layoutY="230.0" mnemonicParsing="false" text="TFTP" />
+      <Separator layoutX="84.0" layoutY="238.0" prefHeight="0.0" prefWidth="493.0" />
+      <Label id="tftplabel" disable="true" layoutX="51.0" layoutY="259.0" text="TFTP IP Address" />
+      <Separator layoutX="95.0" layoutY="347.0" prefHeight="3.0" prefWidth="575.0" />
+      <Separator layoutX="89.0" layoutY="439.0" prefHeight="3.0" prefWidth="585.0" />
+      <CheckBox id="acl" layoutX="29.0" layoutY="431.0" mnemonicParsing="false" text="ACL" />
+      <TextField id="aclnum" disable="true" layoutX="178.0" layoutY="457.0" prefHeight="25.0" prefWidth="121.0" />
+      <Label id="aclnumlabel" disable="true" layoutX="93.0" layoutY="461.0" text="Number" />
+      <Button id="back" layoutX="53.0" layoutY="513.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="85.0" text="Back" />
+      <Button id="finish" layoutX="163.0" layoutY="513.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="85.0" text="Finish" />
+      <Button id="cancel" layoutX="456.0" layoutY="513.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="85.0" text="Cancel" />
+      <TextField id="hostname" layoutX="166.0" layoutY="10.0" prefHeight="25.0" prefWidth="171.0" text="Intellicom" />
+      <TextField id="username" layoutX="166.0" layoutY="46.0" prefHeight="25.0" prefWidth="171.0" text="admin" />
+      <TextField id="enablesecret" layoutX="166.0" layoutY="117.0" prefHeight="25.0" prefWidth="171.0" text="123!@#intellicom" />
+      <TextField id="privilege" layoutX="166.0" layoutY="153.0" prefHeight="25.0" prefWidth="171.0" text="1" />
+      <TextField id="vtyfrom" layoutX="203.0" layoutY="188.0" prefHeight="31.0" prefWidth="50.0" text="0" />
+      <TextField id="vtyto" layoutX="292.0" layoutY="188.0" prefHeight="31.0" prefWidth="50.0" text="4" />
+      <TextField id="tftpip" disable="true" layoutX="165.0" layoutY="255.0" prefHeight="25.0" prefWidth="171.0" />
+      <Label layoutX="357.0" layoutY="87.0" text="Confirm Password" />
+      <PasswordField id="password" layoutX="166.0" layoutY="83.0" prefHeight="25.0" prefWidth="171.0" text="123!@#intellicom" />
+      <PasswordField id="confirmpassword" layoutX="478.0" layoutY="83.0" prefHeight="25.0" prefWidth="171.0" text="123!@#intellicom" />
+      <Label layoutX="369.0" layoutY="192.0" text="Telnet TimeOut" />
+      <TextField id="timeout" layoutX="478.0" layoutY="188.0" text="240" />
+      <TextField id="startfile" disable="true" layoutX="492.0" layoutY="278.0" prefHeight="25.0" prefWidth="171.0" text="Startup" />
+      <Label id="startfilelabel" disable="true" layoutX="375.0" layoutY="282.0" text="Startup file name" />
+      <CheckBox id="start" disable="true" layoutX="53.0" layoutY="304.0" mnemonicParsing="false" selected="true" text="Startup Config" />
+      <CheckBox id="run" disable="true" layoutX="193.0" layoutY="304.0" mnemonicParsing="false" selected="true" text="Running Config" />
+      <Label id="runfilelabel" disable="true" layoutX="376.0" layoutY="317.0" text="Runing file name" />
+      <TextField id="runningfile" disable="true" layoutX="492.0" layoutY="313.0" prefHeight="25.0" prefWidth="171.0" text="Running" />
+      <TextField id="communitystring" disable="true" layoutX="335.0" layoutY="394.0" prefHeight="25.0" prefWidth="171.0" text="Default" />
+      <Label id="string" disable="true" layoutX="335.0" layoutY="366.0" text="Community String" />
+      <Group id="g" layoutX="113.0" layoutY="7.0">
+         <children>
+            <RadioButton id="rw" disable="true" layoutX="95.0" layoutY="390.0" mnemonicParsing="false" text="RW">
+               <toggleGroup>
+                  <ToggleGroup fx:id="g" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton id="ro" disable="true" layoutX="95.0" layoutY="366.0" mnemonicParsing="false" selected="true" text="RO" toggleGroup="$g" />
+         </children>
+      </Group>
+      <CheckBox id="snmp" layoutX="23.0" layoutY="339.0" mnemonicParsing="false" text="SNMP" />
+      <Label id="ipacllabel" disable="true" layoutX="342.0" layoutY="461.0" text="IP Address" />
+      <TextField id="ipacl" disable="true" layoutX="427.0" layoutY="457.0" prefHeight="25.0" prefWidth="164.0" promptText="Single / Net IP" />
+      <Group id="g" layoutX="512.0" layoutY="83.0">
+         <children>
+            <RadioButton id="deny" disable="true" layoutX="95.0" layoutY="390.0" mnemonicParsing="false" text="Deny">
+               <toggleGroup>
+                  <ToggleGroup fx:id="g1" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton id="permit" disable="true" layoutX="95.0" layoutY="366.0" mnemonicParsing="false" selected="true" text="Permit" toggleGroup="$g1" />
+         </children>
+      </Group>
+   </children>
+</AnchorPane>

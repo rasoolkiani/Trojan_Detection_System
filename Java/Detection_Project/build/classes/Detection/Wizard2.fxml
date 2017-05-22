@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="482.0" prefWidth="563.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ComboBox id="kindofdevice" layoutX="292.0" layoutY="67.0" prefHeight="36.0" prefWidth="216.0" promptText="Click to Select">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ComboBox>
+      <ComboBox id="typeofdevice" layoutX="292.0" layoutY="113.0" prefHeight="36.0" prefWidth="216.0" promptText="Click to Select">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ComboBox>
+      <Label layoutX="47.0" layoutY="73.0" text="What kind of device do you like to config?" />
+      <Label layoutX="47.0" layoutY="119.0" text="Type Of Device" />
+      <CheckBox id="ethernet" layoutX="47.0" layoutY="192.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="96.0" text="   Ethernet" />
+      <Separator layoutX="140.0" layoutY="197.0" prefHeight="6.0" prefWidth="375.0" />
+      <Label id="iplabel" disable="true" layoutX="80.0" layoutY="276.0" text="IP Address" />
+      <Label id="gatewaylabel" disable="true" layoutX="81.0" layoutY="371.0" text="Gateway" />
+      <TextField id="ip" disable="true" layoutX="281.0" layoutY="271.0" prefHeight="36.0" prefWidth="224.0" text="172.21.221.250" />
+      <TextField id="gateway" disable="true" layoutX="282.0" layoutY="366.0" prefHeight="36.0" prefWidth="224.0" text="172.21.221.25" />
+      <Button id="back" layoutX="47.0" layoutY="424.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="105.0" text="Back" />
+      <Button id="next" layoutX="187.0" layoutY="424.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="105.0" text="Next" />
+      <Button id="cancel" layoutX="314.0" layoutY="424.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="105.0" text="Cancel" />
+      <TextField id="vlanproperty" disable="true" layoutX="282.0" layoutY="223.0" prefHeight="36.0" prefWidth="224.0" text="1" />
+      <ComboBox id="vlanstate" disable="true" layoutX="77.0" layoutY="223.0" prefWidth="150.0" promptText="Vlan">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ComboBox>
+      <TextField id="subnetmask" disable="true" layoutX="281.0" layoutY="321.0" prefHeight="36.0" prefWidth="224.0" text="255.255.255.0" />
+      <Label id="subnetlabel" disable="true" layoutX="80.0" layoutY="326.0" text="Subnet Mask" />
+   </children>
+</AnchorPane>
